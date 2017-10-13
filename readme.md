@@ -136,6 +136,8 @@ bot.dialog('askForDateTime', [
 
 ## REGRISTRATION
 
+### Create your bot here:
+
 ### [dev.botframework.com](https://dev.botframework.com/)
 
 
@@ -163,6 +165,12 @@ bot.dialog('askForDateTime', [
 * Release Management
 * Error Reporting
 * ... and much more
+
+### Build
+![](./images/build.png)
+
+### Release
+![](./images/release.png)
 
 
 ## Hands-on Lab
