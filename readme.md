@@ -173,6 +173,15 @@ bot.dialog('askForDateTime', [
 ![](./images/release.png)
 
 
+## Testing - using `botbuilder-template`
+
+```
+> npm test
+```
+
+![](./images/test-cov.png)
+
+
 ## Hands-on Lab
 
 #### "botbuilder-template" Lab steps:
