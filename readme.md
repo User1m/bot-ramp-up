@@ -211,7 +211,6 @@ If using LUIS: Train & Deploy your [LUIS app](http://luis.ai/)
 
 12. Remove `Login, Sample` from `Root/Root.Dialog.ts`
 
-
 18. Delete `Login & Sample` Skills folders
 
 14. `npm run clean`
@@ -227,6 +226,46 @@ If using LUIS: Train & Deploy your [LUIS app](http://luis.ai/)
 19. [Setup your ci-cd pipeline](https://www.visualstudio.com/team-services/)
 
 
+## Deploy
+
+### Locally -
+#### [Ngrok:](https://ngrok.com/)
+
+```
+> ngrok http 3978
+```
+
+* Copy your ngrok `https` endpoint
+
+
+![](./images/ngrok.png)
+
+* Add url to `dev.botframework.com` settings
+
+![](./images/bot-settings.png)
+
+
+* Run the bot locally 
+
+```
+> npm start
+
+bot should be running on localhost:3978
+```
+
+### Cloud -
+#### Azure:
+
+1). Via Git Repo
+
+* Create an [Azure Web App](https://portal.azure.com/)
+* Connect your Web App to the Git Repo via `Deployment Options`
+
+2). Via CI-CD
+
+* Create an [Azure Web App](https://portal.azure.com/)
+* Create your CI-CD pipeline
+* Deploy via Release Pipeline (`Continuous Delivery`)
 
 ## Bonus
 
