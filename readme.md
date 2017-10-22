@@ -192,15 +192,15 @@ If using LUIS: Train & Deploy your [LUIS app](http://luis.ai/)
 
 1. Clone [botbuilder-template](https://github.com/user1m/botbuilder-template)
 
-2. Copy `Sample` to `<NewSkill>`
+2. Copy `Start ` to `<NewSkill>`
 
-3. Rename occurrences of the name `"Sample"` to `<NewSkill>` in copied folder
+3. Rename occurrences of the name `"Start"` to `<NewSkill>` in copied folder
 
-4. Remove `Login, Sample` skill imports from `bot.ts`
+4. Remove `Login, Start ` skill imports from `bot.ts`
 
 5. Register `<NewSkill>` dialogs in `bot.ts`
 
-6. Change occurrences of `Sample` with `<NewSkill>` in `bot.ts`
+6. Change occurrences of `Start` with `<NewSkill>` in `bot.ts`
 
 7. Add your custom dialogs to `<NewSkill>.Dialogs.ts`
 
@@ -218,9 +218,9 @@ If using LUIS: Train & Deploy your [LUIS app](http://luis.ai/)
 
 13. Configure `Root/Root.Dialog.ts` to lead into your starting dialog
 
-12. Remove `Login, Sample` from `Root/Root.Dialog.ts`
+12. Remove `Login, Start` from `Root/Root.Dialog.ts`
 
-18. Delete `Login & Sample` Skills folders
+18. Delete `Login & Start` Skills folders
 
 14. `npm run clean`
  
@@ -228,7 +228,7 @@ If using LUIS: Train & Deploy your [LUIS app](http://luis.ai/)
 
 16. `npm run watch` - runs a typescript watcher to compile your code in the background
  
-17. `npm run emulator` - runs the non-webpacked emulator code so that you can edit your `.ts` files and see changes realtime
+17. `npm run server` - runs the non-webpacked emulator code so that you can edit your `.ts` files and see changes realtime
 
 16. `npm run test` - test your bot code
 
@@ -284,6 +284,17 @@ bot should be running on localhost:3978
 ### 4. [Offline Directline](https://github.com/ryanvolum/offline_dl) - emulate the bot framework connector locally
 
 ## DEMOBOT
+
+#### Includes:
+
+* LUIS Integration
+* Cortana Speech
+* BotHandoff Integration
+* CogServices - Translator
+* QNA Service
+* CI-CD Pipeline
+* Unit tests
+
 
 ![](./images/demobot-1.png)
 ![](./images/demobot-2.png)
